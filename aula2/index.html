@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-02</title>
+    <link rel ="shortcut icon" href ="favicon.png" type ="image/x-icon">
+    <!--link:favicon - -->.
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desafio das imagens</h1>
+    <h2>Imagens da cidade</h2>
+    <img src="vilaVelha.jpg" alt="Imagem Vila Velha" width ="600px">
+    <h2>Imagem de Vila Velha - ES com legenda</h2>
+        <picture>
+            <img src="vilaVelhaLegendado.jpg" alt="Imagem da cidade de Vila Velha" width="600px">
+            <figcaption>Imagem da cidade de Vila Velha - ES</figcaption>
+            <br>
+            <br>
+        </picture>
+    <picture>
+        <source srcset="vilaVelhap.jpg" media ="(min-width: 900px)">
+        <img src="vilaVelhag.webp" alt = "Imagem da cidade de Vila Velha" width="800px">
+
+    </picture>
+    <!--img cria o atalho rápido-->
+    <!--<img scr ="Abc.jpg" alt = "Abcd">
+    alt = descrição da imagem-->
+
+</body>
+</html>
