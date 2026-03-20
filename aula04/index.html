@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+        <h2>Negrito/Destaque</h2>
+            <p>Na frase temos uma parte do texto em negrito usando a <b>tag b </b>  (não semântica) </p>
+            <p>Na frase temos uma parte do texto em negrito usando a <strong>tag strong</strong> (com semântica)</p>
+        <h2>Itálico/Ênfase</h2>
+            <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
+            <p>Nesta frase vamos entrar com uma palavra em <EM>itálico</EM> usando a tag EM (com semântica)</p>
+        <h2>Texto Marcador</h2>
+            <p>Aqui vamos usar um texto com destaque <mark style="background-color: purple;"> de texto</p>
+            <p>Aqui vamos usar um texto com destaque <mark style="background-color: yellow;"> de texto</p>
+        <h2>Texto grande e pequeno</h2>
+            <p>Estamos trabalhando aqui com um <big> texto grande </big> um <small> pequeno nesta frase</small></p>
+        <h2>Texto Deletado</h2>
+            <p>Neste paragráfo vamos trabalhar com um texto <del>que foi excluído</del> da frase</p>
+        <h2>Texto inserido</h2>
+            <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase uma forma não semântica</p>
+            <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de uma forma semântica</p>
+        <h2>Texto sobrescrito</h2>
+            <p>Vamos demonstrar uma fórmula da equação do segundo grau ax<sup>2</sup> + bx + c = 0 usando a tag sup</p>
+        <h2>Texto subescrito</h2>
+            <p>Vamos demonstrar a fórmula da água H<sub>2</sub>0</p>
+        <h2>Trecho de código fonte</h2>
+            <p>Neste exemplo vou demonstrar um trecho de código</p>
+            <p>Inserindo o comando <code>document.getElementById('editCodigo')</code> que é um comando JavaScript</p>
+            <p>Inserido um longo código de JavaScript</p>
+        <pre>
+            <code>
+        import java.util.Scanner;
+        function equacaoSegundoGrau(a, b, c) {
+        if (a === 0) {
+            return "Isso não é uma equação de segundo grau.";
+        }
+
+        const delta = b * b - 4 * a * c;
+
+        if (delta < 0) {
+            return "A equação não possui raízes reais.";
+        } else if (delta === 0) {
+            const x = -b / (2 * a);
+            return `A equação possui uma raiz real: x = ${x}`;
+        } else {
+            const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            return `A equação possui duas raízes reais: x1 = ${x1} e x2 = ${x2}`;
+            }
+        }
+            </code>
+        </pre>
+        <h2>Citações (quotation) simples</h2>
+            <p>Segundo Steve Jobs <q> A tecnologia move o mundo</q></p>
+        <h2>Citações completas (livros)</h2>
+            <p>Segundo Sandra Kussonoki no seu livro A dança e o ventre: </p>
+            <blockquote
+                cite = "https://www.google.com.br/books/edition/A_Dan%C3%A7a_e_o_Ventre_Apar%C3%AAncia_corporal/vhmHBAAAQBAJ?hl=pt-br&gbpv=1&dq=html5+para+leigos&printsec=frontcover">
+                Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos visando à obtenção de um corpo mais próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outros, comprovam essa busca obsessiva pelo ideal de perfeição, que é baseado principalmente na magreza. 
+            </blockquote>
+        <h2>Abreviações</h2>
+            <p>Estamos estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascate Style Sheet">CSS</abbr></p>
+        <h2>Texto invertido</h2>
+            <p><bdo dir="ltr">Estou estudando HTML</bdo></p>
+            <p><bdo dir="rtl">Estou estudando HTML</bdo></p>
+</body>
+</html>
