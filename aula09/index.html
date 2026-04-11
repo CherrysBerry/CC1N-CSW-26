@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-09</title>
+</head>
+<body>
+    <form action="post">
+     <table border ="1">
+        <thead>
+            <h1>Formulário</h1>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan = "2"> Nome:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id = "nome" placeholder="Digite seu nome" name = "nome"></td>
+            </tr>
+            <tr>
+                <td><label for="email"> E-mail pessoal:</label></td>
+                <td><input type="text" id ="emailPessoal" placeholder="Digite seu e-mail pessoal" name = "emailPessoal"> </td>
+            </tr>
+            <tr>
+                <td><label for="email"> E-mail(patter):</label></td>
+                <td><input type="text" id ="emailPatter" placeholder="Digite seu e-mail com @" name = "emailPatter"> </td>
+            </tr>
+            <tr>
+                <td><label for="senha"> Senha:</label></td>
+                <td><input type="text" id ="senha" placeholder="Digite sua senha" name = "senha"> </td>
+            </tr>
+            <tr>
+                <td><label for="idade"> Idade:</label></td>
+                <td><textarea name = "idade" cols="2" rows="1" placeholder="" readonly></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="senha"> Deixe um comentário:</label>
+                    <br>
+                    <textarea name = "comentário" cols="50" rows="10" placeholder="Escreva aqui um comentário" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="materiaInteresse"> Matéria de interesse:</label>
+                    <br>
+                    <input type="checkbox" id ="backend" name = "backend"> Backend
+                    <br>
+                    <input type="checkbox" id ="frontend" name = "frontend"> FrontEnd
+                    <br>
+                    <input type="checkbox" id ="fullstack" name = "fullstack"> FullStack
+                    <br>
+                </td>
+                <td>
+                    <label for="tipoViagem"> Tipo de viagem:</label>
+                    <br>
+                    <input type="radio" id ="tipoViagem" name = "tipoViagem"> Negócios
+                    <br>
+                    <input type="radio" id ="tipoViagem" name = "tipoViagem"> Lazer
+                    <br>
+                    <input type="radio" id ="tipoViagem" name = "tipoViagem"> Turismo
+                    <br>
+                    <input type="radio" id ="tipoViagem" name = "tipoViagem"> Acadêmico
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="esporte"> Esporte favorito: </label>
+                    <select name="esportes" size="1">
+                        <option value="futebol">Futebol</option>
+                        <option value="basquete">Basquete</option>
+                        <option value="volei">Vôlei</option>
+                        <option value="tenis">Tênis</option>
+                        <option value="natacao">Natação</option>
+                    </select>
+                </td>
+                <td>
+                    Investimentos:
+                    <select name="investimentos" id="investimentos">
+                            <optgroup label="Baixo Risco">
+                                <option value="poupanca">Poupança</option>
+                                <option value="CDB">CDB</option>
+                                <option value="tesouroDireto">Tesouro Direto</option>
+                            </optgroup>
+                            <optgroup label="Medio risco">
+                                <option value="fundosImobiliarios">Fundos Imobiliários</option>
+                                <option value="cdi">CDI</option>
+                                <option value="debentures">DEBÊNTURES</option>
+                            </optgroup>
+                            <optgroup label="Alto Risco">
+                                <option value="criptoMoedas">Criptomoedas</option>
+                                <option value="acoes">Ações</option>
+                                <option value="opcoes">Opções</option>
+                            </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    Escolha uma cor: <input type="color" name="cor" id="cor">
+                    <br>
+                    <br>
+                </td>
+                <td>
+                    Selecione um arquivo: <input type="file" name="arquivo" id="arquivo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Data e hora do envio: <input type="datetime-local" name="dateT" id="dateT">
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <button type="submit">Enviar</button>
+                </td>
+                <td>
+                    <button type="reset">Limpar</button>
+                </td>
+            </tr>
+        </tfoot>
+     </table>
+    </form>
+</body>
+</html>
