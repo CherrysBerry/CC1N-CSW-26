@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient( 90deg, #0664a4, #12a1e7);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 600px;
+    height: 520px;
+    background-color: #8edef7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 50px;
+    border: 10px;
+    border-radius: 10px;
+}
