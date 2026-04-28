@@ -1,0 +1,59 @@
+.container{
+    background-color: rgb(47, 0, 255);
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+}
+.container:hover{
+    background-color: rgb(0, 224, 150);
+}
+.container:active{
+    background-color: rgb(255, 140, 0);
+}
+.box{   
+    background-color: aquamarine;
+    justify-self: center;
+    margin-top: 10px;
+    width: 1000px;
+    height: 600px;
+    align-content: center;
+    justify-content: space-between;
+    border: 10px;
+    border-radius: 10px;
+}
+.youtube{
+    font-size: 22px;
+    justify-self: center;
+    padding: 20px;
+}
+.youtube::before{
+    content: '🌟';
+}
+.youtube::after{
+    content: '🌟';
+}
+.spotify{
+    font-size: 22px;
+    justify-self: center;
+    padding: 20px;
+}
+.spotify::before{
+    content: '🌟';
+}
+.spotify::after{
+    content: '🌟';
+}
+.amazonMusic{
+    font-size: 22px;
+    justify-self: center;
+    padding: 20px;
+}
+.amazonMusic::before{
+    content: '🌟';
+}
+.amazonMusic::after{
+    content: '🌟';
+}
